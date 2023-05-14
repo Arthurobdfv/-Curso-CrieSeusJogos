@@ -51,7 +51,7 @@ public class BuilderEditor : Editor
 
         if (GUILayout.Button("Create Dialogue"))
         {
-            if (ds.dialogue != "")
+            if (string.IsNullOrWhiteSpace(ds.dialogue))
             {
                 ds.dialogues.Add(s);
 
